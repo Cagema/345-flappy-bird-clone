@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
     {
         if (_rb.velocity != Vector2.zero)
         {
-            transform.rotation = Quaternion.Euler(0, 0, _rb.velocity.y  - 90);
+            transform.rotation = Quaternion.Euler(0, 0, _rb.velocity.y);
         }
 
         if (transform.position.y > GameManager.Single.RightUpperCorner.y + 0.5f ||
